@@ -1,0 +1,9 @@
+mport random
+minimum = 1
+maximum = 6
+data = "Y"
+while data == "Y":
+    print("The dice is rolling")
+    print("The value is")
+    print(random.randint(minimum,maximum))
+    data = input("Do you want to roll again?")
