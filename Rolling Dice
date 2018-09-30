@@ -1,9 +1,46 @@
-mport random
+import random
 minimum = 1
 maximum = 6
 data = "Y"
-while data == "Y":
+while (data == "Y" or data =="y" or data == "yes" or data=="Yes" or data =="YES"):
     print("The dice is rolling")
-    print("The value is")
-    print(random.randint(minimum,maximum))
-    data = input("Do you want to roll again?")
+    k=random.randint(minimum,maximum)
+    if(k==1):
+        print("|``````````|")
+        print("|          |")
+        print("|    0     |")
+        print("|          |")
+        print("|__________|")
+    elif (k == 2):
+        print("|``````````|")
+        print("| 0        |")
+        print("|          |")
+        print("|        0 |")
+        print("|__________|")
+    elif (k == 3):
+        print("|``````````|")
+        print("| 0        |")
+        print("|    0     |")
+        print("|       0  |")
+        print("|__________|")
+    elif (k == 4):
+        print("|``````````|")
+        print("|  0    0  |")
+        print("|          |")
+        print("|  0    0  |")
+        print("|__________|")
+    elif (k == 5):
+        print("|``````````|")
+        print("| 0     0  |")
+        print("|    0     |")
+        print("| 0     0  |")
+        print("|__________|")
+    else:
+        print("|``````````|")
+        print("| 0  0  0  |")
+        print("| 0  0  0  |")
+        print("| 0  0  0  |")
+        print("|__________|")
+
+
+    data = input("Do you want to roll again? \n")
